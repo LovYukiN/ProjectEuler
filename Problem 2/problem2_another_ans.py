@@ -1,4 +1,5 @@
 # Stealed from Project Euler thread 2 by Begoner
+# Just call the function while using it
 # Explaination first
 '''
 This may be a small improvement.  The Fibonacci series is:
@@ -14,9 +15,9 @@ And so each third number is even.  We don't need to calculate the odd numbers.  
 x, y, x + y, x + 2y, 2x + 3y, 3x + 5y
 '''
 def calcE():
-	x = y = 1
+	x,y = 1,1
 	sum = 0
-	while (sum < 1000000):
+	while (sum < 4000000):
 		sum += (x + y)
 		x, y = x + 2 * y, 2 * x + 3 * y
-	return sum
+	print sum
