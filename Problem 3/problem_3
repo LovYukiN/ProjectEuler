@@ -1,0 +1,20 @@
+import time
+start=time.clock()
+obj=600851475143
+i=2
+facs=[]
+tmp=1
+while(i<obj):
+    if obj%i==0 and i%2!=0:
+	num1=i
+	num2=obj/i
+	tmp*=num1
+	facs.append(num1)
+	i+=1
+	if tmp==obj:
+	    break
+    else:
+	i+=1
+print max(facs),'\n'
+end=time.clock()
+print end-start
